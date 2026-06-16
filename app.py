@@ -10,7 +10,7 @@ def home():
 def chat():
     user_msg = request.json.get('message', '')
     bot_msg = f"Dijiste: {user_msg}. Ya quedó en Render bro 👌"
-    return jsonify({'response': bot_msg})
+    return jsonify({'response': bot_msg})  # ← CLAVE: dice 'response'
 
 if __name__ == '__main__':
     app.run(debug=True)
