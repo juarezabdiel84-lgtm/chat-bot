@@ -11,7 +11,7 @@ def home():
 def chat():
     user_msg = request.json['message']
     bot_msg = f"Dijiste: {user_msg}. Ya quedó en Render bro 👌"
-    return jsonify({'reply': bot_msg})
+    return jsonify({'response': bot_msg})
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
